@@ -1,28 +1,19 @@
 package at.technikum.randomnumber;
 
+import org.junit.Test;
+import org.junit.jupiter.api.Assertions;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import java.util.Random;
 
-class RandomNumberControllerTest {
+import static org.junit.Assert.*;
 
-    /*
-
-    @Test
-    void randomNumberTrue() {
-        Random rn = new Random();
-        int toProveOk = rn.nextInt(1,101);
-        Assertions.assertEquals(toProveOk < 101,toProveOk);
-        }
-    }
+public class RandomNumberControllerTest {
 
 
     @Test
-    void randomNumberFalse() {
+    public void randomNumberTrue() {
         Random rn = new Random();
         int toProveOk = rn.nextInt(1,101);
-        Assert.assertNotEquals(toProveOk,null);
+        Assertions.assertTrue(toProveOk > 0);
     }
-
-
- */
 }
